@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ParcelPro – Universal Parcel Tracking</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+  <div class="container header-container">
+    <h1 class="logo">ParcelPro</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#tracking">Track</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#" class="btn primary" onclick="showSignup()">Sign Up</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container hero-content">
+    <div class="hero-text">
+      <h2>Track Your Order Worldwide</h2>
+      <p>Track shipments from UPS, DHL, FedEx, USPS, and 1500+ couriers — in one place!</p>
+      <a href="#tracking" class="btn primary">Track Parcel</a>
+      <div class="courier-logos">
+        <img src="image.jpg/download.png" alt="UPS" />
+        <img src="image.jpg/download (2).png" alt="FedEx" />
+        <img src="image.jpg/images.png" alt="DHL" />
+        <img src="image.jpg/download (1).png" alt="USPS" />
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="image.jpg/ss.avif" alt="Tracking Dashboard" />
+    </div>
+  </div>
+</section>
+
+<!-- Tracking Section -->
+<section class="tracking" id="tracking">
+  <div class="container">
+    <h2>Start Tracking Instantly</h2>
+    <p>Enter your tracking ID and get real-time updates.</p>
+    <div class="tracking-box">
+      <input type="text" placeholder="Enter Tracking ID">
+      <button class="btn primary">Track</button>
+    </div>
+  </div>
+</section>
+
+<!-- Features -->
+<section id="features" class="features">
+  <div class="container">
+    <h2>Powerful Features</h2>
+    <div class="feature-grid">
+      <div class="feature"><h3>Global Coverage</h3><p>1500+ couriers supported worldwide</p></div>
+      <div class="feature"><h3>AI Detection</h3><p>Auto-detect courier from tracking ID</p></div>
+      <div class="feature"><h3>Webhook Alerts</h3><p>Instant status updates via webhook</p></div>
+      <div class="feature"><h3>Dashboard</h3><p>Real-time parcel analytics</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section id="pricing" class="pricing">
+  <div class="container">
+    <h2>Choose Your Plan</h2>
+    <div class="pricing-cards">
+      <div class="card"><h3>Free</h3><p>$0/mo</p><ul><li>10 Shipments</li><li>Basic Support</li></ul><button class="btn outline">Select</button></div>
+      <div class="card popular"><h3>Pro</h3><p>$29/mo</p><ul><li>1,000 Shipments</li><li>Priority Support</li></ul><button class="btn primary">Select</button></div>
+      <div class="card"><h3>Enterprise</h3><p>Custom</p><ul><li>Unlimited</li><li>Dedicated Support</li></ul><button class="btn outline">Contact</button></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="faq">
+  <div class="container">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item"><h4>What is ParcelPro?</h4><p>A universal shipment tracking solution.</p></div>
+    <div class="faq-item"><h4>Which couriers are supported?</h4><p>1500+ including DHL, FedEx, UPS, USPS, etc.</p></div>
+    <div class="faq-item"><h4>Is the API free?</h4><p>We offer a free plan with 10 shipments/month.</p></div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="contact">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit" class="btn primary">Send</button>
+    </form>
+  </div>
+</section>
+
+<!-- Signup Modal -->
+<div class="modal" id="signup-modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeSignup()">&times;</span>
+    <h2>Create Your Account</h2>
+    <form onsubmit="return validateSignup()">
+      <input type="text" id="name" placeholder="Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <button type="submit" class="btn primary">Sign Up</button>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <p>© 2025 ParcelPro — Universal Parcel Tracking Solution.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
